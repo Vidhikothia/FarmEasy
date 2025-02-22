@@ -1,7 +1,6 @@
 # 🌾 FarmEasy
 
 FarmEasy is a comprehensive web application designed to assist farmers with essential agricultural needs. It offers features like plant disease detection, crop recommendations, access to government schemes, and valuable articles and cheat sheets to enhance farming practices.
----
 
 ## 🚀 Features
 
@@ -10,8 +9,6 @@ FarmEasy is a comprehensive web application designed to assist farmers with esse
 - **🏛️ Government Schemes:** Provides updated information on government schemes and policies for farmers.
 - **📚 Articles & Cheat Sheets:** Offers educational content and quick references for farming techniques and best practices.
 
----
-
 ## 🛠️ Tech Stack
 
 - **Frontend:** React.js, Streamlit
@@ -19,8 +16,6 @@ FarmEasy is a comprehensive web application designed to assist farmers with esse
 - **Database:** MongoDB
 - **Machine Learning:** Python
 - **API Integration:** RESTful APIs
-
----
 
 ## 🚦 Getting Started
 
@@ -43,7 +38,7 @@ cd FarmEasy
 cd backend
 npm install
 ```
--### 3. Configure .env file
+- ### 3. Configure .env file
 
 ```bash
 PORT=5000
@@ -61,7 +56,6 @@ cd ../frontend
 npm install
 npm start
 ```
----
 
 ## 🛠️ Tech Stack
 
