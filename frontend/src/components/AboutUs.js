@@ -1,6 +1,9 @@
 import React from 'react';
-import './AboutUs.css'; // Import your CSS file for styling
-import farmertech from './farmertech.jpeg'; // Import the image from the local folder
+import './AboutUs.css'; 
+import farmertech from './farmertech.jpeg'; 
+import team1 from './team1.jpg'; 
+// import team2 from './team2.jpg'; 
+// import team3 from './team3.jpg'; 
 
 const AboutUs = () => {
   return (
@@ -10,7 +13,7 @@ const AboutUs = () => {
         <div className="content">
           <div className="text">
             <p>
-              <strong>Kisan Mitra</strong> was created with a single mission in mind: 
+              <strong>FarmEasy</strong> was created with a single mission in mind: 
               to empower farmers by connecting them with the right resources, 
               government schemes, and expert guidance to improve their livelihoods.
             </p>
@@ -30,6 +33,28 @@ const AboutUs = () => {
             <img src={farmertech} alt="Farmers working with technology" />
           </div>
         </div>
+
+        <div className="meet-the-team">
+          <h3>Meet the Team Behind This</h3>
+          <div className="team-members">
+            <div className="team-member">
+              <img src={team1} alt="Team Member 1" />
+              <h4>Vidhi Kothia</h4>
+              <p>Founder & CEO</p>
+            </div>
+            <div className="team-member">
+              <img src={team1} alt="Team Member 2" />
+              <h4>Jane Smith</h4>
+              <p>Agriculture Expert</p>
+            </div>
+            <div className="team-member">
+              <img src={team1} alt="Team Member 3" />
+              <h4>Mike Johnson</h4>
+              <p>Technical Lead</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
