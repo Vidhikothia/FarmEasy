@@ -1,6 +1,6 @@
 import React from "react";
 import jsPDF from "jspdf";
-import Navbar from "./Navbar"; // Import the Navbar component
+// import Navbar from "./Navbar"; // Import the Navbar component
 
 const CheatSheetPage = () => {
   const cheatSheetContent = `
