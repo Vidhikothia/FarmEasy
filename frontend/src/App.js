@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import Mantra from "./components/Mantra";
+import VideoCards from "./components/VideoCards";
+import Footer from "./components/Footer";
+import LoginPage from "./components/LoginPage";
+import "./App.css";
+import RegisterPage from "./components/RegisterPage";
+import ArticlePage from "./components/ArticlePage";
+import CheatsheetPage from "./components/CheatsheetPage";
+import Scheme from "./components/scheme";
+import AboutUs from "./components/AboutUs";
+import Videos from "./components/Videos";
+import Crop from './components/Crop'; // Make sure the path is correct
+import PlantDiseaseDetection from './components/PlantDiseaseDetection';
+import VideoUploadForm from "./components/VideoUploadForm";
+import ArticleUploadForm from "./components/ArticleUploadForm";
+import CheatsheetUploadForm from "./components/CheatsheetUploadForm";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <div id="google_translate_element" style={{ display: 'none' }}></div>
+
+      <Routes>
+        {/* Route for the homepage */}
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <Mantra />
+              <Crop />
+              <PlantDiseaseDetection />
+              <VideoCards />
+              <Scheme />
+              <Footer />
+            </>
+          }
+        />
+        
+        {/* Route for the login page */}
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/article" element={<ArticlePage />} />
+        <Route path="/cheatsheet" element={<CheatsheetPage />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/videos" element={<Videos />} />
+        <Route path="/videouploadform" element={<VideoUploadForm />}/>
+        <Route path="/cheatsheetuploadform" element={<CheatsheetUploadForm />}/>
+        <Route path="/articleuploadform" element={<ArticleUploadForm />}/>
+
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
