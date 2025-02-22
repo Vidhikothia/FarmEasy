@@ -57,14 +57,6 @@ npm install
 npm start
 ```
 
-## 🛠️ Tech Stack
-
-- **Frontend:** React.js, Streamlit
-- **Backend:** Node.js, Express.js, Flask
-- **Database:** MongoDB
-- **Machine Learning:** Python
-- **API Integration:** RESTful APIs
-
 ## 🧠 Future Enhancements
 - Add a chat feature for farmers to connect with experts.
 - Implement push notifications for new schemes and articles.
@@ -73,8 +65,8 @@ npm start
 ## 🤝 Meet the Team
 
 - **Vidhi Kothia** ([Vidhikothia](https://github.com/Vidhikothia/FarmEasy)) 
-- **Kruti Talaviya** ([@teammate1](https://github.com/teammate1))
-- **Drashti Sitapara** ([@teammate2](https://github.com/teammate2)) 
+- **Kruti Talaviya** ([Kruti-Talaviya](https://github.com/Kruti-Talaviya))
+- **Drashti Sitapara** ([Drashtisitapara](https://github.com/Drashtisitapara)) 
 
 We're just a group of friends trying to make farming a bit easier and more fun for everyone! 🚜🌱
 
