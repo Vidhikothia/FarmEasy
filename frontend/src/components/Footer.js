@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-content">
-          <h2>KisanMitra</h2>
+          <h2>FarmEasy</h2>
           <p>
             Empowering farmers with the right information, tools, and resources to grow and prosper.
           </p>
@@ -44,12 +44,12 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="social-media">
-          <p>Follow us:</p>
+          {/* <p>Follow us:</p>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"> Twitter</a> | 
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> Instagram</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> Instagram</a> */}
         </div>
-        <p>© 2024 KisanMitra. All rights reserved.</p>
+        <p>© 2025 FarmEasy. All rights reserved.</p>
       </div>
     </footer>
   );

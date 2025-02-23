@@ -80,7 +80,7 @@
 /* Footer Bottom Section */
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   flex-wrap: wrap;
   align-items: center;
   padding-top: 10px;

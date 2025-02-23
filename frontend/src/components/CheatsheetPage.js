@@ -51,7 +51,6 @@ const CheatSheetPage = () => {
   return (
     <div style={styles.container}>
       <section style={styles.content}>
-        <h1 style={styles.title}>Agriculture Cheat Sheet</h1>
         <p style={styles.description}>
           Below is a quick reference guide to essential agricultural practices and tips.
         </p>
@@ -69,13 +68,13 @@ const CheatSheetPage = () => {
 const styles = {
   container: {
     fontFamily: "'Roboto', sans-serif",
-    backgroundColor: "lightblue",
+    backgroundColor: "#e8f5e9", // Very light green background
     minHeight: "100vh",
     textAlign: "center",
     padding: "20px",
   },
   content: {
-    marginTop: "50px",
+    marginTop: "10px",
     padding: "20px",
   },
   title: {
@@ -99,7 +98,7 @@ const styles = {
   },
   cheatSheetText: {
     whiteSpace: "pre-wrap",
-    fontFamily: "Courier, monospace",
+    fontFamily: "'Fira Code', monospace", // New font for the cheat sheet
     fontSize: "1rem",
     color: "#333",
   },
@@ -113,5 +112,6 @@ const styles = {
     cursor: "pointer",
   },
 };
+
 
 export default CheatSheetPage;

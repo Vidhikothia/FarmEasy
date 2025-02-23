@@ -1,25 +1,27 @@
+/* Navbar Container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  transition: box-shadow 0.3s; /* Smooth transition for shadow */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add shadow below navbar */
-  position: sticky; /* Make navbar sticky */
-  top: 0; /* Stick to the top of the viewport */
-  z-index: 1000; /* Ensure it stays above other elements */
-  background: white; /* Keep white background */
+  transition: box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
 }
 
 .navbar.scrolled {
-  background: white; /* Keep background white when scrolled */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Slightly darker shadow when scrolled */
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 30px; /* Increased gap between links */
+  gap: 30px;
 }
 
 .nav-links li {
@@ -27,27 +29,30 @@
   cursor: pointer;
 }
 
+/* Links Styles */
 .nav-links a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.1rem; /* Increased font size */
-  font-weight: 500; /* Optional: makes the text slightly bolder */
-  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .nav-links a:hover {
-  color: #007BFF; /* Change color on hover */
-  transform: translateY(-2px); /* Slightly lift the text */
+  color: #78ca87;
+  transform: translateY(-2px);
 }
 
+/* Logo Styling */
 .kisanmitra {
-  width: 100px; /* Set the desired width */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 100%; /* Ensure it stays responsive */
-  display: block; /* Optional: ensures the logo behaves as a block element */
-  margin: 0 auto; /* Optional: centers the logo if needed */
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
+/* Dropdown Menu Styles */
 .dropdown {
   position: absolute;
   top: 100%;
@@ -56,7 +61,7 @@
   background-color: #ffffff;
   border: 1px solid #ddd;
   z-index: 10;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for dropdown */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .nav-links li:hover .dropdown {
@@ -71,4 +76,66 @@
 
 .dropdown li:hover {
   background-color: #f1f1f1;
+}
+
+/* Make Language Icon Bigger */
+.nav-links li a svg {
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+/* Dark/Light Theme Styles */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  width: 50px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-switch label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-switch label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(13, 80, 27);
+  border-radius: 50%;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch input:checked + label {
+  background-color: #78ca87;
+}
+
+.toggle-switch input:checked + label:after {
+  transform: translateX(26px);
 }

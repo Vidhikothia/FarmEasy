@@ -4,43 +4,39 @@ import "./Navbar.css";
 const ArticlePage = () => {
   const articles = [
     {
-      title: "The Future of Sustainable Farming",
+      title: "Sustainable Agriculture: An Overview",
       description:
-        "Learn about sustainable farming practices that are revolutionizing agriculture and ensuring food security for future generations.",
-      link: "https://www.nationalgeographic.com/environment/article/sustainable-agriculture", // Link to actual article
+        "Learn how sustainable farming practices contribute to environmental conservation and long-term food security.",
+      link: "https://en.wikipedia.org/wiki/Sustainable_agriculture",
     },
     {
-      title: "Top 10 Crops for Profitable Farming",
+      title: "Top 10 High-Value Crops for Profitable Farming",
       description:
-        "Discover the top 10 crops that are highly profitable and ideal for both small-scale and large-scale farmers.",
-      link: "https://www.agriculture.com/crops/top-10-most-profitable-crops-to-grow", // Link to actual article
+        "Discover which crops offer the best return on investment for farmers looking to maximize their profits.",
+      link: "https://en.wikipedia.org/wiki/List_of_high-value_crops",
     },
     {
-      title: "Organic vs. Conventional Farming",
+      title: "Organic Farming: Principles and Practices",
       description:
-        "Explore the pros and cons of organic and conventional farming methods and their impact on the environment.",
-      link: "https://www.organicvalley.coop/organic-vs-conventional/", // Link to actual article
+        "Understand the principles of organic farming, including soil health, biodiversity, and natural pest management.",
+      link: "https://en.wikipedia.org/wiki/Organic_farming",
     },
     {
-      title: "Modern Agricultural Technologies",
+      title: "Technological Innovations in Modern Agriculture",
       description:
-        "Dive into the latest technologies like drones, IoT, and AI that are transforming the agricultural landscape.",
-      link: "https://www.theguardian.com/environment/2020/aug/04/farming-drones-and-ai-could-revolutionize-agriculture", // Link to actual article
+        "Explore how technology, including drones, IoT, and precision farming, is revolutionizing the agricultural industry.",
+      link: "https://en.wikipedia.org/wiki/Agricultural_technology",
     },
     {
-      title: "Soil Health: Tips and Tricks",
+      title: "Soil Health and Its Impact on Agriculture",
       description:
-        "Understand the importance of soil health and get actionable tips to enhance soil fertility on your farm.",
-      link: "https://www.soils.org/discover-soils/what-is-soil/soil-health", // Link to actual article
+        "Learn about the factors that affect soil health and strategies to improve soil fertility and crop productivity.",
+      link: "https://en.wikipedia.org/wiki/Soil_health",
     },
   ];
 
   return (
     <div style={styles.container}>
-      {/* Navbar */}
-      
-
-      {/* Hero Section */}
       <section style={styles.heroSection}>
         <h1 style={styles.heroTitle}>Explore the World of Agriculture</h1>
         <p style={styles.heroSubtitle}>
@@ -48,18 +44,17 @@ const ArticlePage = () => {
         </p>
       </section>
 
-      {/* Articles Grid */}
       <div style={styles.articlesGrid}>
         {articles.map((article, index) => (
           <div key={index} style={styles.articleCard}>
-            {/* <img
-              src={article.image}
-              alt={article.title}
-              style={styles.articleImage}
-            /> */}
             <h3 style={styles.articleTitle}>{article.title}</h3>
             <p style={styles.articleDescription}>{article.description}</p>
-            <a href={article.link} style={styles.readMoreLink} target="_blank" rel="noopener noreferrer">
+            <a
+              href={article.link}
+              style={styles.readMoreLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Read More
             </a>
           </div>
@@ -100,13 +95,7 @@ const styles = {
     overflow: "hidden",
     textAlign: "center",
     padding: "20px",
-    marginBottom:"20px",
-  },
-  articleImage: {
-    width: "100%",
-    height: "200px",
-    objectFit: "cover",
-    marginBottom: "15px",
+    marginBottom: "20px",
   },
   articleTitle: {
     fontSize: "1.5rem",
